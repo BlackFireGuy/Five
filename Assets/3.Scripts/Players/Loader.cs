@@ -5,17 +5,17 @@ using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 public class Loader : MonoBehaviour
 {
-    public AssetReference playerPrefab;
+    public AssetReference BKMusic;
     public Transform positon;
     
     private void Start()
     {
         //调用OnplayerLoaded
-        Addressables.LoadAssetAsync<GameObject>(playerPrefab).Completed += OnplayerLoaded;
+        Addressables.LoadAssetAsync<GameObject>("BlackMan4").Completed += OnPlayerLoaded;
     }
 
     //当加载完毕再执行
-    private void OnplayerLoaded(AsyncOperationHandle<GameObject> obj)
+    private void OnPlayerLoaded(AsyncOperationHandle<GameObject> obj)
     {
         switch (obj.Status)
         {
@@ -32,4 +32,6 @@ public class Loader : MonoBehaviour
                 break;
         }
     }
+
+    
 }

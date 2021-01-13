@@ -23,7 +23,7 @@ public class MusicMgr : BaseSingleton<MusicMgr>
 
     void Update()
     {
-        for (int i = soundList.Count - 1;i>= 0; i--)
+        for (int i = soundList.Count - 1; i >= 0; i--)
         {
             if (!soundList[i].isPlaying)
             {
@@ -39,21 +39,42 @@ public class MusicMgr : BaseSingleton<MusicMgr>
     /// <param name="name"></param>
     public void PlayBMusic(string name)
     {
-        if(bkMusic == null)
+        if (bkMusic == null)
         {
             GameObject obj = new GameObject(PathCfg.OBJECT_MADE_BY_MUSICMGR_FOR_BGM);
             bkMusic = obj.AddComponent<AudioSource>();
         }
         //异步加载背景音乐、加载完成后播放
-        ResMgr.GetInstance().LoadAsync<AudioClip>(PathCfg.PATH_BGM+name,(clip)=> {
+        ResMgr.GetInstance().LoadAsync<AudioClip>(PathCfg.PATH_BGM + name, (clip) => {
             bkMusic.clip = clip;
             bkMusic.loop = true;
             bkMusic.volume = bkValue;
             bkMusic.Play();
         });
 
-    }
 
+    }
+    
+    /// <summary>
+    /// 播放远程背景音乐
+    /// </summary>
+    /// <param name="name"></param>
+    public void PlayRemoteBMusic(string name)
+    {
+        if (bkMusic == null)
+        {
+            GameObject obj = new GameObject(PathCfg.OBJECT_MADE_BY_MUSICMGR_FOR_BGM);
+            bkMusic = obj.AddComponent<AudioSource>();
+        }
+        //异步加载远程下载下来的背景音乐
+        //加载完成后播放
+        ResMgr.GetInstance().LoadAsync<AudioClip>(PathCfg.PATH_BGM + name, (clip) => {
+            bkMusic.clip = clip;
+            bkMusic.loop = true;
+            bkMusic.volume = bkValue;
+            bkMusic.Play();
+        });
+    }
     /// <summary>
     /// 改变背景音乐音量大小
     /// </summary>

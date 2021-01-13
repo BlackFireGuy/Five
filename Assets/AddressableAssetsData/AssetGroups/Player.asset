@@ -22,10 +22,47 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Player
+    - Res
     m_MainAsset: {fileID: 1708750786602534930, guid: 306619a8880fa334180dbca9857695c9,
       type: 3}
     m_TargetAsset: {fileID: 1708750786602534930, guid: 306619a8880fa334180dbca9857695c9,
       type: 3}
+  - m_GUID: b8e9406053870d54e93867682d0b73ea
+    m_Address: Bk4
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Music
+    - BK
+    - Res
+    m_MainAsset: {fileID: 8300000, guid: b8e9406053870d54e93867682d0b73ea, type: 3}
+    m_TargetAsset: {fileID: 8300000, guid: b8e9406053870d54e93867682d0b73ea, type: 3}
+  - m_GUID: ce5a0293b41b76643bd14a819021783c
+    m_Address: BK1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Music
+    - BK
+    - Res
+    m_MainAsset: {fileID: 8300000, guid: ce5a0293b41b76643bd14a819021783c, type: 3}
+    m_TargetAsset: {fileID: 8300000, guid: ce5a0293b41b76643bd14a819021783c, type: 3}
+  - m_GUID: d3a5e60070486724fb6a81eda7a9a571
+    m_Address: BK2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Music
+    - BK
+    - Res
+    m_MainAsset: {fileID: 8300000, guid: d3a5e60070486724fb6a81eda7a9a571, type: 3}
+    m_TargetAsset: {fileID: 8300000, guid: d3a5e60070486724fb6a81eda7a9a571, type: 3}
+  - m_GUID: f093c0528b8be224d9a0631ac8f55123
+    m_Address: BK3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Music
+    - BK
+    - Res
+    m_MainAsset: {fileID: 8300000, guid: f093c0528b8be224d9a0631ac8f55123, type: 3}
+    m_TargetAsset: {fileID: 8300000, guid: f093c0528b8be224d9a0631ac8f55123, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: a7d9f8e48ad56b54ea0ea4b977e5ff76, type: 2}
   m_SchemaSet:

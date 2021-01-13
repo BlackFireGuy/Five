@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Cross1
+  m_Controller: {fileID: 9100000, guid: e5dcb59cbbfaea94dbb68bf643debeb8, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 2fed153c0ecec6146a33fd02b05e8099, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 631c0cea1d4aa8b4dab036f3e1961fd3, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: f925c5ad2170f2440b56cd18baf83ddd, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4f16b249eb4a4514a94042f394a1ce9f, type: 2}

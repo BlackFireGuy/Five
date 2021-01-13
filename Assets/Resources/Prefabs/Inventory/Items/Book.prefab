@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8620636086516909655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8620636086516909658}
+  - component: {fileID: 8620636086516909653}
+  - component: {fileID: 863760174389128646}
+  - component: {fileID: 4110752623109636638}
+  - component: {fileID: 8620636086516909652}
+  m_Layer: 0
+  m_Name: Book
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8620636086516909658
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8620636086516909655}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.8927774, y: -2.922082, z: -0.21728516}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &8620636086516909653
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8620636086516909655}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 246366919
+  m_SortingLayer: 4
+  m_SortingOrder: 10
+  m_Sprite: {fileID: 21300000, guid: ddf5aa7d44ae6174f88e6376f5e1e466, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.875, y: 1.8125}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!50 &863760174389128646
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8620636086516909655}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &4110752623109636638
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8620636086516909655}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.4375, y: 1}
+    newSize: {x: 1.875, y: 1.8125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.4375, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &8620636086516909652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8620636086516909655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8646078bc6c448f418585faf0d2da19f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisItem:
+    itemName: "\u4E09\u5DE1\u624B\u624E*\u4F20\u95FB"
+    itemImage: {fileID: 21300000, guid: 9fe14474d8d1a06479fffe7698a25852, type: 3}
+    itemHeld: 1
+    itemInfo: "\u4F20\u8BF4\u5728\u53E6\u4E00\u4E2A\u4E16\u754C\uFF0C\u6709\u4E00\u4E2A\u4F5C\u5BB6\u540D\u4E3A\u534E\u8A00\u4E09\u5DE1\uFF0C\u4ED6\u6240\u5199\u4E4B\u4E8B\u5149\u602A\u9646\u79BB\uFF0C\u532A\u5937\u6240\u601D\uFF0C\u5B9E\u5728\u96BE\u4EE5\u8BA9\u4E16\u4EBA\u63A5\u6536\uFF0C\u8FD9\u672C\u4E66\u6709\u5341\u4E03\u7AE0\u6B8B\u5377\uFF0C\u968F\u7740\u98CE\u5439\u65E5\u6652\u548C\u65F6\u95F4\u7684\u6253\u78E8\uFF0C\u8FD9\u5341\u4E03\u7AE0\u5DF2\u6E10\u6E10\u7834\u65E7\uFF0C\u800C\u53C8\u5206\u6563\u5230\u4E16\u754C\u5404\u5730\uFF0C\u5982\u4ECA\u770B\u6765\u662F\u5F88\u96BE\u627E\u5230\u4E86\u3002\u636E\u4F20\u8A00\u8FD9\u6837\u7684\u53E4\u7C4D\u90FD\u4F1A\u8574\u85CF\u9065\u8FDC\u7684\u5F02\u4E16\u754C\u80FD\u91CF\uFF0C\u53EF\u60DC\u5F88\u96BE\u9047\u5230\u4E86"
+    types: 5
+    health: 0
+    poisonResistance: 0
+    hitResistance: 0
+    magicResistance: 0
+    attack: 0
+    critRate: 0
+    critPower: 0
+    power: 0
+    magic: 0
+    speed: 0
+    skillId: 0
+    castRange: 0
+    cooldown: 0
+    damageRange: 0
+    flySpeed: 0
+    radius: 0
+    duringTime: 0
+    trace: 0
+  playerInventory: {fileID: 11400000, guid: b3e91faa686e4864e812120c4918259c, type: 2}

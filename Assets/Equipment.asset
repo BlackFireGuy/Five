@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: Equipment
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: Eye
+    m_Hash: 1245036881
+    m_CategoryList:
+    - m_Name: normal
+      m_Hash: 562391268
+      m_Sprite: {fileID: -6501135919664095168, guid: 0e9e4f60d45da8e47ad4bee5d9c7db36,
+        type: 3}
+    - m_Name: armour1
+      m_Hash: -363998791
+      m_Sprite: {fileID: -4779303391861082826, guid: 9e887abbc9b892345877b9c4bc670142,
+        type: 3}
+  - m_Name: Body
+    m_Hash: 2073732236
+    m_CategoryList:
+    - m_Name: normal
+      m_Hash: 562391268
+      m_Sprite: {fileID: -2387374598564479255, guid: 0e9e4f60d45da8e47ad4bee5d9c7db36,
+        type: 3}
+    - m_Name: armour1
+      m_Hash: -363998791
+      m_Sprite: {fileID: 6964723358842908340, guid: 9e887abbc9b892345877b9c4bc670142,
+        type: 3}
+  - m_Name: Armour_L
+    m_Hash: 490176688
+    m_CategoryList:
+    - m_Name: normal
+      m_Hash: 562391268
+      m_Sprite: {fileID: 0}
+    - m_Name: armour1
+      m_Hash: -363998791
+      m_Sprite: {fileID: 2712818467801188953, guid: 9e887abbc9b892345877b9c4bc670142,
+        type: 3}
+    - m_Name: armour2
+      m_Hash: 1933869059
+      m_Sprite: {fileID: 7372381046129383167, guid: 0e9e4f60d45da8e47ad4bee5d9c7db36,
+        type: 3}
+  - m_Name: Armour_R
+    m_Hash: -415711789
+    m_CategoryList:
+    - m_Name: normal
+      m_Hash: 562391268
+      m_Sprite: {fileID: 0}
+    - m_Name: armour1
+      m_Hash: -363998791
+      m_Sprite: {fileID: -280504202121706940, guid: 9e887abbc9b892345877b9c4bc670142,
+        type: 3}
+    - m_Name: armour2
+      m_Hash: 1933869059
+      m_Sprite: {fileID: -6399377572587744315, guid: 0e9e4f60d45da8e47ad4bee5d9c7db36,
+        type: 3}

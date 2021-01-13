@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 8782e19f33e3c2e4aa6be80ffaa29d97
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - damageCanvas: {fileID: 3457783011772165755, guid: 2f4cc5ed8e97ebf408e5687fb7165ffe,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

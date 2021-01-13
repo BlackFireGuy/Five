@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4800976299881765512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4800976299881765510}
+  - component: {fileID: 4800976299881765513}
+  m_Layer: 0
+  m_Name: RoomGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4800976299881765510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4800976299881765512}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4800976301489654773}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4800976299881765513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4800976299881765512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c306caae2df9b9a4c9077174957f93b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direction: 0
+  roomPrefab: {fileID: 3441647731748717878, guid: 42e5f3fbb2eb3264f82fc0920352aa8a,
+    type: 3}
+  roomNumber: 9
+  startColor: {r: 0.48000547, g: 0.8962264, b: 0.19023676, a: 1}
+  endColor: {r: 1, g: 0.042452812, b: 0.042452812, a: 0.95686275}
+  generatorPoint: {fileID: 4800976301489654773}
+  xOffset: 18
+  yOffset: 10
+  roomLayer:
+    serializedVersion: 2
+    m_Bits: 32768
+  maxStep: 0
+  rooms: []
+  wallType:
+    singleLeft: {fileID: 2258829928075168740, guid: c1f0e1324266c0a40b452d9f6ad88367,
+      type: 3}
+    singleRight: {fileID: 2258829928075168740, guid: e18584e225898c34282a290c021f4f34,
+      type: 3}
+    singleUp: {fileID: 2258829928075168740, guid: 07863a7f7395e804eb5ab272d5b0f865,
+      type: 3}
+    singleDown: {fileID: 2258829928075168740, guid: 90f02afbe9e2ade499c0776a6d2e7144,
+      type: 3}
+    doubleLU: {fileID: 2258829928075168740, guid: dc0e05716c1750242a503298965ceaf6,
+      type: 3}
+    doubleLR: {fileID: 2258829928075168740, guid: 1a18d8f6dd8771d42b186ffef4445c70,
+      type: 3}
+    doubleLD: {fileID: 2258829928075168740, guid: 8692c645927c734468bccd2aaa81332f,
+      type: 3}
+    doubleUR: {fileID: 2258829928075168740, guid: 9d74fbc7b1e11aa44b4b3918d6349cd1,
+      type: 3}
+    doubleUD: {fileID: 2258829928075168740, guid: 02e26b5ffa118c44cbaf16a6beb24520,
+      type: 3}
+    doubleRD: {fileID: 2258829928075168740, guid: 3b3724616866d3648b0822c7c71d0453,
+      type: 3}
+    tripleLUR: {fileID: 2258829928075168740, guid: a97ae263917a7a34cb0a2884bf1a20fc,
+      type: 3}
+    tripleLRD: {fileID: 2258829928075168740, guid: efbf9739e27c10f4a800308a88b25b7f,
+      type: 3}
+    tripleRDU: {fileID: 2258829928075168740, guid: ef9b83390b604f842a6318fcab91700e,
+      type: 3}
+    tripleLDU: {fileID: 2258829928075168740, guid: 7e5c09bbbcb11c14fa2e7ca3ae4267cc,
+      type: 3}
+    fourDoors: {fileID: 2258829928075168740, guid: 0f5241c4437938c4b994173e6009a7ff,
+      type: 3}
+--- !u!1 &4800976301489654772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4800976301489654773}
+  m_Layer: 0
+  m_Name: point
+  m_TagString: Untagged
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4800976301489654773
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4800976301489654772}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4800976299881765510}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -71,6 +71,8 @@ public class MonoMgr : BaseSingleton<MonoMgr>
         controller.StopCoroutine(methodName);
     }
 
-    
-
+    public GameObject InstantiateObj(GameObject obj)
+    {
+        return controller.InstantiateObj(obj);
+    }
 }

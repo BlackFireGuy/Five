@@ -90,7 +90,7 @@ public class BodyHit : MonoBehaviour
                 isAttacked = true;
                 MonoMgr.GetInstance().StartCoroutine(IsAttackCo());
                 //2生成效果
-                PoolMgr.GetInstance().GetObj(PathCfg.PATH_FX + "beat", (o) => { o.transform.position = beatPos; });
+                PoolMgr.GetInstance().GetObj("beat", (o) => { o.transform.position = beatPos; });
                 GlobalVolumeManager.instance.Shake();
                 MusicMgr.GetInstance().PlaySound("BoxBeatNormal");
                 //更新受击时间

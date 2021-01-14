@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -81,19 +82,41 @@ public class GameManager : MonoBehaviour
         //再初始化角色和NPC
         if (isUpDown)//第三人称俯视角
         {
-            GameObject obj = ResMgr.GetInstance().Load<GameObject>("Prefabs/PlayerNew");
-            obj.transform.position = bornPos.position;
-
+            ResMgr.GetInstance().Load<GameObject>("Prefabs/PlayerNew",OnPlayerLoaded);
         }
         else//第三人称2D横板
         {
-            GameObject obj = ResMgr.GetInstance().Load<GameObject>("Prefabs/Player/BlackMan4");
-            obj.transform.position = bornPos.position;
+            Debug.Log("开始实例化！！！");
+            ResMgr.GetInstance().Load<GameObject>("BlackMan4", OnPlayerLoaded);
+
+            //GameObject obj = ResMgr.GetInstance().Load<GameObject>("Prefabs/Player/BlackMan4");
+            //obj.tranform.position = bornposition
+            Debug.Log("已实例化！！！");
         }
             
         //播放音乐
-        MusicMgr.GetInstance().PlayBMusic("BK1");
+        MusicMgr.GetInstance().PlayBMusic("BK4");
     }
+    //角色生成回调函数 当加载完毕再执行
+    private void OnPlayerLoaded(AsyncOperationHandle<GameObject> obj)
+    {
+        switch (obj.Status)
+        {
+            case AsyncOperationStatus.Succeeded:
+                GameObject loadedObject = obj.Result;
+                GameObject player = Instantiate(loadedObject, bornPos.position, Quaternion.identity);
+                Renderer[] renderers = player.GetComponentsInChildren<SpriteRenderer>();
+                foreach (var item in renderers)
+                {
+                    item.material.shader = Shader.Find("Universal Render Pipeline/2D/Sprite-Lit-Default");
+                }
+                break;
+            default:
+                break;
+        }
+    }
+
+
     //---------------------------------------------------------------------------------------------
     //将生成的敌人加入到敌人列表
     public void IsEnemy(Enemy enemy)

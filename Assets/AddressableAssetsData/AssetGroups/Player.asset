@@ -17,6 +17,62 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: a90e0cd86c3bfb2408fa5de89d3f29ec
   m_SerializeEntries:
+  - m_GUID: 0218f116c1fed5f478c603dc945deae5
+    m_Address: Beat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - Sound
+    m_MainAsset: {fileID: 8300000, guid: 0218f116c1fed5f478c603dc945deae5, type: 3}
+    m_TargetAsset: {fileID: 8300000, guid: 0218f116c1fed5f478c603dc945deae5, type: 3}
+  - m_GUID: 1852420119f8efc479e6426c4754a1c2
+    m_Address: EventSystem
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 4373955670203882022, guid: 1852420119f8efc479e6426c4754a1c2,
+      type: 3}
+    m_TargetAsset: {fileID: 4373955670203882022, guid: 1852420119f8efc479e6426c4754a1c2,
+      type: 3}
+  - m_GUID: 195b8494a0fd58f439da54d77e093413
+    m_Address: Boss Health Bar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 7648971696930653140, guid: 195b8494a0fd58f439da54d77e093413,
+      type: 3}
+    m_TargetAsset: {fileID: 7648971696930653140, guid: 195b8494a0fd58f439da54d77e093413,
+      type: 3}
+  - m_GUID: 197c076b10ff2494797039ecefcc0d26
+    m_Address: BoxBeatNormal
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - Sound
+    m_MainAsset: {fileID: 8300000, guid: 197c076b10ff2494797039ecefcc0d26, type: 3}
+    m_TargetAsset: {fileID: 8300000, guid: 197c076b10ff2494797039ecefcc0d26, type: 3}
+  - m_GUID: 223e60289e7601647b448f526b7b5f25
+    m_Address: Canvas
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 4487609598716800513, guid: 223e60289e7601647b448f526b7b5f25,
+      type: 3}
+    m_TargetAsset: {fileID: 4487609598716800513, guid: 223e60289e7601647b448f526b7b5f25,
+      type: 3}
+  - m_GUID: 2f4cc5ed8e97ebf408e5687fb7165ffe
+    m_Address: Canvas_Damage
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 3457783011772165755, guid: 2f4cc5ed8e97ebf408e5687fb7165ffe,
+      type: 3}
+    m_TargetAsset: {fileID: 3457783011772165755, guid: 2f4cc5ed8e97ebf408e5687fb7165ffe,
+      type: 3}
   - m_GUID: 306619a8880fa334180dbca9857695c9
     m_Address: BlackMan4
     m_ReadOnly: 0
@@ -27,6 +83,200 @@ MonoBehaviour:
       type: 3}
     m_TargetAsset: {fileID: 1708750786602534930, guid: 306619a8880fa334180dbca9857695c9,
       type: 3}
+  - m_GUID: 494cf9bd88f420845bb40f53cfb99cbd
+    m_Address: Map
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 1794381863190851675, guid: 494cf9bd88f420845bb40f53cfb99cbd,
+      type: 3}
+    m_TargetAsset: {fileID: 1794381863190851675, guid: 494cf9bd88f420845bb40f53cfb99cbd,
+      type: 3}
+  - m_GUID: 4aeeff5f0f5be7646a22cb8f1121f15d
+    m_Address: Load Scene Slider
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 8464805096206767614, guid: 4aeeff5f0f5be7646a22cb8f1121f15d,
+      type: 3}
+    m_TargetAsset: {fileID: 8464805096206767614, guid: 4aeeff5f0f5be7646a22cb8f1121f15d,
+      type: 3}
+  - m_GUID: 52cf98a2d75781244969b1e3cc04cc7b
+    m_Address: Po
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - Sound
+    m_MainAsset: {fileID: 8300000, guid: 52cf98a2d75781244969b1e3cc04cc7b, type: 3}
+    m_TargetAsset: {fileID: 8300000, guid: 52cf98a2d75781244969b1e3cc04cc7b, type: 3}
+  - m_GUID: 5bc8e25901381cf4ba819613a2c6c0df
+    m_Address: OpenInfo
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 3341269388117703329, guid: 5bc8e25901381cf4ba819613a2c6c0df,
+      type: 3}
+    m_TargetAsset: {fileID: 3341269388117703329, guid: 5bc8e25901381cf4ba819613a2c6c0df,
+      type: 3}
+  - m_GUID: 60bd6cb6bba568941b68ff823eb1a440
+    m_Address: hurt
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - Sound
+    m_MainAsset: {fileID: 8300000, guid: 60bd6cb6bba568941b68ff823eb1a440, type: 3}
+    m_TargetAsset: {fileID: 8300000, guid: 60bd6cb6bba568941b68ff823eb1a440, type: 3}
+  - m_GUID: 649e01a7e5e1fd04ba1439a9650f8fb7
+    m_Address: Skill Tree
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 8039464810162126664, guid: 649e01a7e5e1fd04ba1439a9650f8fb7,
+      type: 3}
+    m_TargetAsset: {fileID: 8039464810162126664, guid: 649e01a7e5e1fd04ba1439a9650f8fb7,
+      type: 3}
+  - m_GUID: 7cf303a8b959ec14c806841199534dca
+    m_Address: Bag Panel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 8999682522627341301, guid: 7cf303a8b959ec14c806841199534dca,
+      type: 3}
+    m_TargetAsset: {fileID: 8999682522627341301, guid: 7cf303a8b959ec14c806841199534dca,
+      type: 3}
+  - m_GUID: 81399a28c894c134895045e0ec413343
+    m_Address: Canvas_map
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 1664628566616425404, guid: 81399a28c894c134895045e0ec413343,
+      type: 3}
+    m_TargetAsset: {fileID: 1664628566616425404, guid: 81399a28c894c134895045e0ec413343,
+      type: 3}
+  - m_GUID: 828bbc67dd3093747ae9a02451a26c04
+    m_Address: Main
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 8762764520124796304, guid: 828bbc67dd3093747ae9a02451a26c04,
+      type: 3}
+    m_TargetAsset: {fileID: 8762764520124796304, guid: 828bbc67dd3093747ae9a02451a26c04,
+      type: 3}
+  - m_GUID: 86114bff4a84a0846b0b01ed8eee7250
+    m_Address: Slot
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 8122866207570069833, guid: 86114bff4a84a0846b0b01ed8eee7250,
+      type: 3}
+    m_TargetAsset: {fileID: 8122866207570069833, guid: 86114bff4a84a0846b0b01ed8eee7250,
+      type: 3}
+  - m_GUID: 88bdb93442b917b48b22c7b65ee03c26
+    m_Address: Game Over Panel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 6531524845498929005, guid: 88bdb93442b917b48b22c7b65ee03c26,
+      type: 3}
+    m_TargetAsset: {fileID: 6531524845498929005, guid: 88bdb93442b917b48b22c7b65ee03c26,
+      type: 3}
+  - m_GUID: 9013160b4ad7768488e3abeb483849b7
+    m_Address: Health Bar
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 4755897815050154166, guid: 9013160b4ad7768488e3abeb483849b7,
+      type: 3}
+    m_TargetAsset: {fileID: 4755897815050154166, guid: 9013160b4ad7768488e3abeb483849b7,
+      type: 3}
+  - m_GUID: 94f3cb6a5a13936438e1eef5255301c5
+    m_Address: LevelLoader
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 3825758214382564173, guid: 94f3cb6a5a13936438e1eef5255301c5,
+      type: 3}
+    m_TargetAsset: {fileID: 3825758214382564173, guid: 94f3cb6a5a13936438e1eef5255301c5,
+      type: 3}
+  - m_GUID: 9a1663027f519c4478c399d8fdb5dd95
+    m_Address: Health Bar Canvas
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 8726235716647827728, guid: 9a1663027f519c4478c399d8fdb5dd95,
+      type: 3}
+    m_TargetAsset: {fileID: 8726235716647827728, guid: 9a1663027f519c4478c399d8fdb5dd95,
+      type: 3}
+  - m_GUID: 9abfb37ab39ee2e45be89fa307ee55a6
+    m_Address: Dialog Panel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 8842835528601283452, guid: 9abfb37ab39ee2e45be89fa307ee55a6,
+      type: 3}
+    m_TargetAsset: {fileID: 8842835528601283452, guid: 9abfb37ab39ee2e45be89fa307ee55a6,
+      type: 3}
+  - m_GUID: 9e1f163907df1074487edf5d3306c736
+    m_Address: Canvas_world_dialog
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 7147521226675105119, guid: 9e1f163907df1074487edf5d3306c736,
+      type: 3}
+    m_TargetAsset: {fileID: 7147521226675105119, guid: 9e1f163907df1074487edf5d3306c736,
+      type: 3}
+  - m_GUID: a3b0e4ea30852824386d93a9fd942e37
+    m_Address: Button In Home
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 8846593110830419997, guid: a3b0e4ea30852824386d93a9fd942e37,
+      type: 3}
+    m_TargetAsset: {fileID: 8846593110830419997, guid: a3b0e4ea30852824386d93a9fd942e37,
+      type: 3}
+  - m_GUID: ad478d224afed854ca4d947a36164216
+    m_Address: Info
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 373778680604219917, guid: ad478d224afed854ca4d947a36164216,
+      type: 3}
+    m_TargetAsset: {fileID: 373778680604219917, guid: ad478d224afed854ca4d947a36164216,
+      type: 3}
+  - m_GUID: aecc5f73c450ca446aed1d79c367f7e1
+    m_Address: Bo
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - Sound
+    m_MainAsset: {fileID: 8300000, guid: aecc5f73c450ca446aed1d79c367f7e1, type: 3}
+    m_TargetAsset: {fileID: 8300000, guid: aecc5f73c450ca446aed1d79c367f7e1, type: 3}
+  - m_GUID: b473de4c9aa894149acd1bd08acb0d62
+    m_Address: Controller
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 3192044231126534060, guid: b473de4c9aa894149acd1bd08acb0d62,
+      type: 3}
+    m_TargetAsset: {fileID: 3192044231126534060, guid: b473de4c9aa894149acd1bd08acb0d62,
+      type: 3}
   - m_GUID: b8e9406053870d54e93867682d0b73ea
     m_Address: Bk4
     m_ReadOnly: 0
@@ -36,6 +286,34 @@ MonoBehaviour:
     - Res
     m_MainAsset: {fileID: 8300000, guid: b8e9406053870d54e93867682d0b73ea, type: 3}
     m_TargetAsset: {fileID: 8300000, guid: b8e9406053870d54e93867682d0b73ea, type: 3}
+  - m_GUID: b937f10eccde7ac4791b21cab02ca899
+    m_Address: Pause Menu
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 6531524845498929005, guid: b937f10eccde7ac4791b21cab02ca899,
+      type: 3}
+    m_TargetAsset: {fileID: 6531524845498929005, guid: b937f10eccde7ac4791b21cab02ca899,
+      type: 3}
+  - m_GUID: c224b4578042638479f34fda6fcd64ec
+    m_Address: Pause Button
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 2416775577345192768, guid: c224b4578042638479f34fda6fcd64ec,
+      type: 3}
+    m_TargetAsset: {fileID: 2416775577345192768, guid: c224b4578042638479f34fda6fcd64ec,
+      type: 3}
+  - m_GUID: cbea30524092eb84bb34a794ffcf9f51
+    m_Address: explosion
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - Sound
+    m_MainAsset: {fileID: 8300000, guid: cbea30524092eb84bb34a794ffcf9f51, type: 3}
+    m_TargetAsset: {fileID: 8300000, guid: cbea30524092eb84bb34a794ffcf9f51, type: 3}
   - m_GUID: ce5a0293b41b76643bd14a819021783c
     m_Address: BK1
     m_ReadOnly: 0
@@ -45,6 +323,16 @@ MonoBehaviour:
     - Res
     m_MainAsset: {fileID: 8300000, guid: ce5a0293b41b76643bd14a819021783c, type: 3}
     m_TargetAsset: {fileID: 8300000, guid: ce5a0293b41b76643bd14a819021783c, type: 3}
+  - m_GUID: d0b9e65428562ef47abc5e4e25c6f423
+    m_Address: Game Over Panel_old
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 7708107059758523696, guid: d0b9e65428562ef47abc5e4e25c6f423,
+      type: 3}
+    m_TargetAsset: {fileID: 7708107059758523696, guid: d0b9e65428562ef47abc5e4e25c6f423,
+      type: 3}
   - m_GUID: d3a5e60070486724fb6a81eda7a9a571
     m_Address: BK2
     m_ReadOnly: 0
@@ -54,6 +342,56 @@ MonoBehaviour:
     - Res
     m_MainAsset: {fileID: 8300000, guid: d3a5e60070486724fb6a81eda7a9a571, type: 3}
     m_TargetAsset: {fileID: 8300000, guid: d3a5e60070486724fb6a81eda7a9a571, type: 3}
+  - m_GUID: e1484ba1cc83eac4a89c089a723a4520
+    m_Address: Canvas
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 5922771360853065424, guid: e1484ba1cc83eac4a89c089a723a4520,
+      type: 3}
+    m_TargetAsset: {fileID: 5922771360853065424, guid: e1484ba1cc83eac4a89c089a723a4520,
+      type: 3}
+  - m_GUID: e72c3bf29119ad34caac9437e2b341e5
+    m_Address: EquipSlot
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 479624395430354189, guid: e72c3bf29119ad34caac9437e2b341e5,
+      type: 3}
+    m_TargetAsset: {fileID: 479624395430354189, guid: e72c3bf29119ad34caac9437e2b341e5,
+      type: 3}
+  - m_GUID: e805ddee3e50fa148873349291e2a6c2
+    m_Address: Load Scene
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 8859734787985449324, guid: e805ddee3e50fa148873349291e2a6c2,
+      type: 3}
+    m_TargetAsset: {fileID: 8859734787985449324, guid: e805ddee3e50fa148873349291e2a6c2,
+      type: 3}
+  - m_GUID: eb57b47ee008936469e9d6f76824070f
+    m_Address: Settings
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 5721304150525796891, guid: eb57b47ee008936469e9d6f76824070f,
+      type: 3}
+    m_TargetAsset: {fileID: 5721304150525796891, guid: eb57b47ee008936469e9d6f76824070f,
+      type: 3}
+  - m_GUID: eed0d3c3b097e12489e09f012554fb97
+    m_Address: Dialog
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 8024100550449140524, guid: eed0d3c3b097e12489e09f012554fb97,
+      type: 3}
+    m_TargetAsset: {fileID: 8024100550449140524, guid: eed0d3c3b097e12489e09f012554fb97,
+      type: 3}
   - m_GUID: f093c0528b8be224d9a0631ac8f55123
     m_Address: BK3
     m_ReadOnly: 0
@@ -63,6 +401,16 @@ MonoBehaviour:
     - Res
     m_MainAsset: {fileID: 8300000, guid: f093c0528b8be224d9a0631ac8f55123, type: 3}
     m_TargetAsset: {fileID: 8300000, guid: f093c0528b8be224d9a0631ac8f55123, type: 3}
+  - m_GUID: f5942ce30adffd14ca71d11d92dd6c9f
+    m_Address: InfoPanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Res
+    - UI
+    m_MainAsset: {fileID: 4326078618731352170, guid: f5942ce30adffd14ca71d11d92dd6c9f,
+      type: 3}
+    m_TargetAsset: {fileID: 4326078618731352170, guid: f5942ce30adffd14ca71d11d92dd6c9f,
+      type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: a7d9f8e48ad56b54ea0ea4b977e5ff76, type: 2}
   m_SchemaSet:

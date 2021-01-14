@@ -45,7 +45,7 @@ MonoBehaviour:
       - m_Id: 6e20744f3bc241848b25addcd2eb3bf8
         m_Value: ServerData/[BuildTarget]
       - m_Id: c39b4be95c5313649ab703c97cc3e95e
-        m_Value: https://assetstream-content.unity.cn/client_api/v1/buckets/8180975f-a6b7-4b2f-8f9b-ea986283d96c/release_by_badge/latest/entry_by_path/content/?path=
+        m_Value: https://assetstream-content.unity.cn/client_api/v1/buckets/75dfd219-66e3-4469-a5ad-c2bf2bbe7928/release_by_badge/latest/entry_by_path/content/?path=
     m_ProfileEntryNames:
     - m_Id: 1739a2fec30cfc7428927362e8891d74
       m_Name: BuildTarget
@@ -70,6 +70,8 @@ MonoBehaviour:
     - Music
     - BK
     - Res
+    - Sound
+    - UI
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 4c33807332825ea4b905793a9befdc34, type: 2}
@@ -87,5 +89,6 @@ MonoBehaviour:
   m_HostingServicesManager:
     m_HostingServiceInfos: []
     m_Settings: {fileID: 11400000}
-    m_NextInstanceId: 0
-    m_RegisteredServiceTypeRefs: []
+    m_NextInstanceId: 1
+    m_RegisteredServiceTypeRefs:
+    - UnityEditor.AddressableAssets.HostingServices.HttpHostingService, Unity.Addressables.Editor

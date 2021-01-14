@@ -88,7 +88,7 @@ public class PoolMgr : BaseSingleton<PoolMgr>
         else
         {
             //通过异步加载资源 创建对象给外部用
-            ResMgr.GetInstance().LoadAsync<GameObject>(name, (o) => { o.name = name; callback(o); });
+            ResMgr.GetInstance().LoadAsync<GameObject>(name, (o) => { o.Result.name = name; callback(o.Result); });
             //obj = GameObject.Instantiate(Resources.Load<GameObject>(name));//实例化一个对象
             //把对象名字改的和缓存池一致
             //obj.name = name;

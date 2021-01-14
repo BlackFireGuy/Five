@@ -11,10 +11,9 @@ public class PlayerInfoManager : MonoBehaviour
             instance = this;
         else
         {
-            Destroy(this);
-            Debug.Log("删除玩家信息管理器desory PlayerinfoManager");
+            if(instance != this)
+                Destroy(this);
         }
-            
     }
 
     [Header("运行时观测")]
@@ -135,8 +134,12 @@ public class PlayerInfoManager : MonoBehaviour
         infoItemData = itemData;
         //在角色身上挂载技能
         //PoolMgr.GetInstance().GetObj(SkillTable.skillpath[itemData.skillId], SkillInit);
-        GameObject obj =  ResMgr.GetInstance().Load<GameObject>(SkillTable.skillpath[itemData.skillId]);
-        SkillInit(obj);
+        ResMgr.GetInstance().LoadAsync<GameObject>(SkillTable.skillpath[itemData.skillId],(obj)=> {
+            var instance = Instantiate(obj.Result);
+            GameObject.DontDestroyOnLoad(instance);
+            SkillInit(instance);
+        });
+        
     }
 
     //在角色身上挂载技能

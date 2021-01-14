@@ -1,7 +1,6 @@
 ﻿public static class PathCfg 
 {
     //---------------------------实例化的物体名称--------------------
-    public static string OBJECT_MADE_BY_MUSICMGR_FOR_BGM = "BkMusic";
     public static string OBJECT_MONOCONTROLLER = "MonoController";
     public static string OBJECT_GAMEDATACONTROLLER = "GameDataController";
     //---------------------场景物体对应的物体资源
@@ -12,17 +11,17 @@
     //--------------------------文件 文件保存位置
 
     //---------------------------资源文件路径--------------
-    public static string PATH_BGM = "Music/BK/";
+    //public static string PATH_BGM = "Music/BK/";
 
-    public static string PATH_MUSIC_SOUND = "Music/Sound/";
+    //public static string PATH_MUSIC_SOUND = "Music/Sound/";
 
-    public static string PATH_UI = "Prefabs/UI/";
+    //public static string PATH_UI = "Prefabs/UI/";
 
-    public static string UI_CANVAS_OBJECT_MADE_BY_UIMANAGER = "Prefabs/UI/Canvas";
+    //public static string UI_CANVAS_OBJECT_MADE_BY_UIMANAGER = "Prefabs/UI/Canvas";
 
-    public static string UI_SYSTEM_OBJECT_MADE_BY_UIMANAGER = "Prefabs/UI/EventSystem";
+    //public static string UI_SYSTEM_OBJECT_MADE_BY_UIMANAGER = "Prefabs/UI/EventSystem";
 
-    public static string PATH_FX = "Prefabs/FX/";
+    //public static string PATH_FX = "Prefabs/FX/";
     //---------------------------prefab文件名称
     //--------------------------ui Login
     public static string PREFAB_PANEL_LOGIN = "Login";

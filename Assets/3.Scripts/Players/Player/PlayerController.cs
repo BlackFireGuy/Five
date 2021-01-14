@@ -60,8 +60,12 @@ public class PlayerController : MonoBehaviour, IDamageable
                 PlayerInfoManager.instance.infoItemData = inventorySkill.itemList[i];
                 //PoolMgr.GetInstance().GetObj(SkillTable.skillpath[inventorySkill.itemList[i].skillId], SkillInit);
                
-                GameObject obj = ResMgr.GetInstance().Load<GameObject>(SkillTable.skillpath[inventorySkill.itemList[i].skillId]);
-                SkillInit(obj);
+                 ResMgr.GetInstance().LoadAsync<GameObject>(SkillTable.skillpath[inventorySkill.itemList[i].skillId],(obj)=> {
+                     var instance = Instantiate(obj.Result);
+                     GameObject.DontDestroyOnLoad(instance);
+                     SkillInit(instance);
+                 });
+                
                 GameManager.instance.isSkillShoot = true;
             }
         }

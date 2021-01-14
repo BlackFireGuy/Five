@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class MusicMgr : BaseSingleton<MusicMgr>
 {
@@ -41,38 +43,33 @@ public class MusicMgr : BaseSingleton<MusicMgr>
     {
         if (bkMusic == null)
         {
-            GameObject obj = new GameObject(PathCfg.OBJECT_MADE_BY_MUSICMGR_FOR_BGM);
+            GameObject obj = new GameObject("BkMusic");
             bkMusic = obj.AddComponent<AudioSource>();
         }
         //异步加载背景音乐、加载完成后播放
-        ResMgr.GetInstance().LoadAsync<AudioClip>(PathCfg.PATH_BGM + name, (clip) => {
-            bkMusic.clip = clip;
+        /*ResMgr.GetInstance().LoadAsync<AudioClip>(name, (obj) => {
+            bkMusic.clip = obj;
             bkMusic.loop = true;
             bkMusic.volume = bkValue;
             bkMusic.Play();
-        });
-
-
-    }
-    
-    /// <summary>
-    /// 播放远程背景音乐
-    /// </summary>
-    /// <param name="name"></param>
-    public void PlayRemoteBMusic(string name)
-    {
-        if (bkMusic == null)
+        });*/
+        ResMgr.GetInstance().LoadAssetsAsync<AudioClip>(name, (objs)=>
         {
-            GameObject obj = new GameObject(PathCfg.OBJECT_MADE_BY_MUSICMGR_FOR_BGM);
-            bkMusic = obj.AddComponent<AudioSource>();
-        }
-        //异步加载远程下载下来的背景音乐
-        //加载完成后播放
-        ResMgr.GetInstance().LoadAsync<AudioClip>(PathCfg.PATH_BGM + name, (clip) => {
-            bkMusic.clip = clip;
-            bkMusic.loop = true;
-            bkMusic.volume = bkValue;
-            bkMusic.Play();
+            switch (objs.Status)
+            {
+                case AsyncOperationStatus.Succeeded:
+                    AudioClip loadedClip = objs.Result[0];
+                    //异步加载远程下载下来的背景音乐
+                    //加载完成后播放
+                    bkMusic.clip = loadedClip;
+                    bkMusic.loop = true;
+                    bkMusic.volume = bkValue;
+                    bkMusic.Play();
+                    break;
+                default:
+                    break;
+            }
+
         });
     }
     /// <summary>
@@ -119,7 +116,7 @@ public class MusicMgr : BaseSingleton<MusicMgr>
         }
       
         //当音效资源异步加载结束后，再添加一个音效
-        ResMgr.GetInstance().LoadAsync<AudioClip>(PathCfg.PATH_MUSIC_SOUND + name, (clip) => {
+        /*ResMgr.GetInstance().LoadAsync<AudioClip>(PathCfg.PATH_MUSIC_SOUND + name, (clip) => {
             AudioSource source = soundObj.AddComponent<AudioSource>();
             source.clip = clip;
             source.loop = isloop;
@@ -129,8 +126,31 @@ public class MusicMgr : BaseSingleton<MusicMgr>
             if (callback != null)
                 callback(source);
 
+        });*/
+        ResMgr.GetInstance().LoadAssetsAsync<AudioClip>(name, (objs)=>
+        {
+            switch (objs.Status)
+            {
+                case AsyncOperationStatus.Succeeded:
+                    AudioClip loadedClip = objs.Result[0];
+                    //异步加载远程下载下来的背景音乐
+                    //加载完成后播放
+
+                    AudioSource source = soundObj.AddComponent<AudioSource>();
+                    source.clip = loadedClip;
+                    source.loop = isloop;
+                    source.volume = soundValue;
+                    source.Play();
+                    soundList.Add(source);
+                    if (callback != null)
+                        callback(source);
+                    break;
+                default:
+                    break;
+            }
         });
     }
+
     /// <summary>
     /// 改变音效大小
     /// </summary>

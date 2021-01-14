@@ -46,13 +46,19 @@ public class PreloadManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ReportProgress();
+    }
+
+    private void ReportProgress()
+    {
         if (downloadDependencies.IsValid())//判断当前下载是否有效
         {
             if (downloadDependencies.PercentComplete < 1)
             {
-                
+
                 UpdateProgressBar(downloadDependencies.PercentComplete);
-            }else if (downloadDependencies.IsDone)
+            }
+            else if (downloadDependencies.IsDone)
             {
                 Addressables.Release(downloadDependencies);
                 Debug.Log("预加载结束");
@@ -84,7 +90,7 @@ public class PreloadManager : MonoBehaviour
                 AudioClip loadedClip = obj.Result[0];
                 if (bkMusic == null)
                 {
-                    GameObject obj11 = new GameObject(PathCfg.OBJECT_MADE_BY_MUSICMGR_FOR_BGM);
+                    GameObject obj11 = new GameObject("BKMusic");
                     bkMusic = obj11.AddComponent<AudioSource>();
                 }
                 //异步加载远程下载下来的背景音乐

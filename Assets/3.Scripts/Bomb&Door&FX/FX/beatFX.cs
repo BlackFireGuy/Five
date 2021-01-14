@@ -13,7 +13,7 @@ public class beatFX : MonoBehaviour
     private IEnumerator PushObj()
     {
         yield return new WaitForSeconds(1f);
-        PoolMgr.GetInstance().PushObj(PathCfg.PATH_FX + this.name, this.gameObject);
+        PoolMgr.GetInstance().PushObj(this.name, this.gameObject);
     }
 
 

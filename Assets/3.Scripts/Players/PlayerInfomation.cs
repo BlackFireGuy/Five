@@ -32,10 +32,13 @@ public class PlayerInfomation
 }
 
 public static class SkillTable{
-    public static List<string> skillpath = new List<string> {
+    /*public static List<string> skillpath = new List<string> {
         "Prefabs/Bomb&TVAndSoOn/GUN&Bullet/Gun001",
         "Prefabs/Bomb&TVAndSoOn/GUN&Bullet/Gun002",
+    };*/
+    public static List<string> skillpath = new List<string> {
+        "Gun001",
+        "Gun002",
     };
-
 }
 

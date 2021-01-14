@@ -22,6 +22,8 @@ public class MonoController : MonoBehaviour
     {
         if (updateEvent != null)
             updateEvent();
+
+        
     }
 
     /// <summary>
@@ -41,6 +43,16 @@ public class MonoController : MonoBehaviour
     {
         updateEvent -= fun;
     }
+    /// <summary>
+    /// 提供给外部，用于生成GameObject
+    /// </summary>
+    /// <param name="obj"></param>
+    public GameObject InstantiateObj(GameObject obj)
+    {
+        return Instantiate(obj);
+    }
+
+
 }
 
 

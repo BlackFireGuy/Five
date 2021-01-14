@@ -36,7 +36,7 @@ public class ScenesMgr : BaseSingleton<ScenesMgr>
         if(fun!=null)
             fun();
     }
-
+/*
     /// <summary>
     /// 提供给外部的异步加载的接口方法
     /// </summary>
@@ -55,7 +55,7 @@ public class ScenesMgr : BaseSingleton<ScenesMgr>
     /// <returns></returns>
     private IEnumerator ReallyLoadSceneAsyn(string name, UnityAction fun)
     {
-        GameObject obj = ResMgr.GetInstance().Load<GameObject>("Prefabs/UI/Load Scene");
+        GameObject obj = ResMgr.GetInstance().LoadAsync<GameObject>("Prefabs/UI/Load Scene");
         AsyncOperation ao =  SceneManager.LoadSceneAsync(name);
         //UIManager.GetInstance().ShowPanel<LoadSceneSliderPanel>("Load Scene Slider", E_UI_Layer.Top, Callback);
         
@@ -74,7 +74,7 @@ public class ScenesMgr : BaseSingleton<ScenesMgr>
         if (fun != null)
             fun();
     }
-
+*/
     private void Callback(LoadSceneSliderPanel panel)
     {
         //换刀basepanel里面了
@@ -89,6 +89,6 @@ public class ScenesMgr : BaseSingleton<ScenesMgr>
     {
         //LoadSceneAsyn(SceneManager.GetActiveScene().name, null) ;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        PlayerPrefs.DeleteKey("playerHealth");
+        //PlayerPrefs.DeleteKey("playerHealth");
     }
 }

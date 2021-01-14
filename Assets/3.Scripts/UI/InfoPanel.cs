@@ -225,6 +225,8 @@ public class InfoPanel : BasePanel
 
     public void RefreshInfo()
     {
+        //判断是否获取到label或者button
+        if (playTime == null) return;
 
         //获取当前时间
         hour = DateTime.Now.Hour;
@@ -248,9 +250,10 @@ public class InfoPanel : BasePanel
         //time.text = (PlayerInfoManager.instance.LoadPlayerInfo().playTime/3600).ToString();
 
         //---------------
+        playerName.text = Playerstate.instance.playerName;
         playTime.text = PlayerInfoManager.instance.info.playTime.ToString();
 
-        playerName.text = Playerstate.instance.playerName;
+        
         level.text = Playerstate.instance.playerLevel.ToString();
         exp.text = Playerstate.instance.currentExp.ToString() + "/" + Playerstate.instance.nextlevelExp[Playerstate.instance.playerLevel].ToString();
         //升级加成+装备加成+天赋加成
